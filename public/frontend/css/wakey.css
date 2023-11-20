@@ -1,0 +1,61 @@
+*
+{
+ margin: 0;
+ padding: 0;
+box-sizing: border-box;
+}
+.navbar a:hover
+
+{
+
+    background-color:#895996;
+    border-radius:8px;
+    color: black;
+
+
+}
+h2{
+
+  background-color: #895996;
+  font-size: 36px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.active
+
+  {
+    border: outset;
+    border-style: outset;
+    border-radius: 8px;
+
+
+    font-size: 50px;
+
+  }
+
+.card-flip > div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+  }
+  .card-front {
+    transform: rotateY(0deg);
+  }
+
+  .card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+  }
+
+  .card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+
+  .card-flip:hover .card-back {
+    transform: rotateY(0deg);
+  }
